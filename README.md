@@ -58,18 +58,18 @@ head -c 16 /dev/urandom | xxd -ps
 ## اجرای MTProxy بر روی سرور
 ```
 screen
-cd ~/MTProxy/objs/bin && ./mtproto-proxy --user nobody --port 8888 --http-ports 444 --mtproto-secret <secret> --proxy-tag  <tag> --aes-pwd proxy-secret proxy-multi.conf --slaves 2
+cd ~/ISMTProxy/objs/bin && ./mtproto-proxy --user nobody --port 8888 --http-ports 444 --mtproto-secret <secret> --proxy-tag  <tag> --aes-pwd proxy-secret proxy-multi.conf --slaves 2
 ```
 or 
 ```
 screen
-cd ~/MTProxy/objs/bin && ./mtproto-proxy -u nobody -p 8888 -H 444 -S <secret> -P  <tag> --aes-pwd proxy-secret proxy-multi.conf -M 2
+cd ~/ISMTProxy/objs/bin && ./mtproto-proxy -u nobody -p 8888 -H 444 -S <secret> -P  <tag> --aes-pwd proxy-secret proxy-multi.conf -M 2
 ```
 
 for limit connections per worker:
 ```
 screen
-cd ~/MTProxy/objs/bin && ./mtproto-proxy --user nobody --port 8888 --http-ports 444 --mtproto-secret <secret> --proxy-tag  <tag> --aes-pwd proxy-secret proxy-multi.conf --slaves 2 --max-special-connections 10
+cd ~/ISMTProxy/objs/bin && ./mtproto-proxy --user nobody --port 8888 --http-ports 444 --mtproto-secret <secret> --proxy-tag  <tag> --aes-pwd proxy-secret proxy-multi.conf --slaves 2 --max-special-connections 10
 ```
 
 where:
