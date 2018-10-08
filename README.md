@@ -36,7 +36,7 @@ chmod 0755 install.sh
 
 ###### 2. دانلود فایل های کانفیگ MTProxy :
 ```
-cd ~/MTProxy/objs/bin
+cd ~/ISMTProxy/objs/bin
 curl -s https://core.telegram.org/getProxySecret -o proxy-secret
 curl -s https://core.telegram.org/getProxyConfig -o proxy-multi.conf
 ```
